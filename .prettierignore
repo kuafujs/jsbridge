@@ -1,0 +1,8 @@
+**/*.min.js
+**/*.min.mjs
+**/*.gz
+**/*.br
+node_modules
+packages/**/dist/**/*.*
+
+.*

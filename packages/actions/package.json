@@ -1,0 +1,32 @@
+{
+	"name": "@jsbridge/actions",
+	"description": "actions collection of jsbridge",
+	"version": "1.0.0",
+	"keywords": [
+		"jsbridge",
+		"actions"
+	],
+	"author": "buns <kuafujs@126.com>",
+	"license": "MIT",
+	"unpkg": "dist/actions.js",
+	"module": "dist/actions.mjs",
+	"main": "dist/actions.cjs",
+	"types": "dist/actions.d.ts",
+	"typings": "dist/actions.d.ts",
+	"files": [
+		"dist",
+		"es"
+	],
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"scripts": {
+		"pretty": "prettier --write \"**/!(*.min.*)\"",
+		"test": "cross-env UT_MDUS=actions jest --config=../../jest.config.js",
+		"build": "siu build actions"
+	},
+	"dependencies": {
+		"@jsbridge/core": "1.0.0"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "@jsbridge/app",
+	"description": "@jsbridge/app",
+	"version": "1.0.0",
+	"keywords": [
+		"app"
+	],
+	"author": "buns <kuafujs@126.com>",
+	"license": "MIT",
+	"unpkg": "dist/app.js",
+	"module": "dist/app.mjs",
+	"main": "dist/app.cjs",
+	"types": "dist/app.d.ts",
+	"typings": "dist/app.d.ts",
+	"files": [
+		"dist"
+	],
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"scripts": {
+		"pretty": "prettier --write \"**/!(*.min.*)\"",
+		"test": "cross-env UT_MDUS=app jest --config=../../jest.config.js",
+		"build": "siu build app"
+	},
+	"dependencies": {
+		"@jsbridge/core": "1.0.0",
+		"@jsbridge/actions": "1.0.0"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "@jsbridge/core",
+	"description": "core of jsbridge",
+	"version": "1.0.0",
+	"keywords": [
+		"jsbridge",
+		"core"
+	],
+	"author": "buns <kuafujs@126.com>",
+	"license": "MIT",
+	"unpkg": "dist/core.js",
+	"module": "dist/core.mjs",
+	"main": "dist/core.cjs",
+	"types": "dist/core.d.ts",
+	"typings": "dist/core.d.ts",
+	"files": [
+		"dist"
+	],
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"scripts": {
+		"pretty": "prettier --write \"**/!(*.min.*)\"",
+		"test": "cross-env UT_MDUS=core jest --config=../../jest.config.js",
+		"build": "siu build core"
+	},
+	"dependencies": {},
+	"sideEffects": false
+}
