@@ -28,5 +28,9 @@
 	},
 	"dependencies": {
 		"@jsbridge/core": "1.0.0"
-	}
+	},
+	"buildFormats": [
+		"es",
+		"cjs"
+	]
 }
